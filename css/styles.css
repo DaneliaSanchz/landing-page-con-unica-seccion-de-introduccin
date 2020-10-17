@@ -57,6 +57,15 @@ body {
     font-weight: 400;
 }
 
+.main__btn-register {
+    padding: 10px 45px;
+    background: white;
+    font-size: 1em;
+    color: var(--primary-color);
+    border-style:  none;
+    border-radius: 20px;
+}
+
 .footer {
     display: flex;
     justify-content: flex-end;
@@ -73,6 +82,7 @@ body {
     list-style: none;
     margin-right: 20px;
 }
+
 .fab {
     width: 25px;
     height: 25px;
@@ -83,5 +93,15 @@ body {
 }
 
 .fab:before{
-    vertical-align: -45%;
+    vertical-align: -90%;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url('/images/bg-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
